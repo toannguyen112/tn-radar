@@ -22,7 +22,7 @@ const HomePage = () => {
 const PointCircle = () => {
   const ref = useRef();
   useFrame(({ clock }) => {
-    ref.current!.rotation.z = clock.getElapsedTime() * 0.05;
+    ref.current.rotation!.z = clock.getElapsedTime() * 0.05;
   });
   return (
     <group ref={ref}>

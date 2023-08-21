@@ -13,8 +13,8 @@ const getGradientStop = (ratio: number) => {
   const c1 = RIGHT_COLOR.match(/.{1,2}/g).map(
     (oct) => parseInt(oct, 16) * ratio
   );
-  const c = [0, 1, 2].map((i) => Math.min(Math.round(c0[i] + c1[i]), 255));
-  const color = c
+  const ci = [0, 1, 2].map((i) => Math.min(Math.round(c0[i] + c1[i]), 255));
+  const color = ci
     .reduce((a, v) => (a << 8) + v, 0)
     .toString(16)
     .padStart(6, '0');
