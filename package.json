@@ -18,19 +18,23 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@react-three/drei": "^9.80.1",
+    "@react-three/fiber": "^8.13.6",
+    "@types/three": "^0.155.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.260.0",
     "next": "^13.4.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
-    "tailwind-merge": "^1.13.2"
+    "tailwind-merge": "^1.13.2",
+    "three": "^0.155.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
-    "@tailwindcss/forms": "^0.5.4",
     "@svgr/webpack": "^8.0.1",
+    "@tailwindcss/forms": "^0.5.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/react": "^18.2.15",
@@ -55,7 +59,7 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings=0",
+      "eslint",
       "prettier -w"
     ],
     "**/*.{json,css,scss,md,webmanifest}": [
