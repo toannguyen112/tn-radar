@@ -34,7 +34,7 @@ export default function Footer() {
                   <input
                     type='email'
                     placeholder='Email Address'
-                    className='title-2 h-[48px] rounded-xl border-none bg-black px-[14px] py-[10px] placeholder:text-[#4E4E4E] xl:h-[70px]'
+                    className='title-2 h-[48px] rounded-xl border-none bg-black px-[14px] py-[10px] text-[#00CC2D] placeholder:text-[#4E4E4E] focus:outline-none focus:ring-0 xl:h-[70px]'
                   />
                 </div>
               </div>

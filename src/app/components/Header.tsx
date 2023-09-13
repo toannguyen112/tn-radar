@@ -15,12 +15,22 @@ export default function Header() {
             </div>
 
             <div className='hidden md:block'>
-              <ul className='title-2 flex items-center space-x-[20px] font-semibold uppercase text-white xl:space-x-[40px] 2xl:space-x-[55px]'>
-                <li>Work</li>
-                <li>Our Services</li>
-                <li>About</li>
-                <li>Our Ecosystem</li>
-                <li>Contact</li>
+              <ul className='title-2 flex items-center space-x-[20px] font-semibold uppercase text-white xl:space-x-[40px] 2xl:space-x-[55px] '>
+                <li className='cursor-pointer duration-300 ease-in-out lg:hover:text-[#00CC2D]'>
+                  Work
+                </li>
+                <li className='cursor-pointer duration-300 ease-in-out lg:hover:text-[#00CC2D]'>
+                  Our Services
+                </li>
+                <li className='cursor-pointer duration-300 ease-in-out lg:hover:text-[#00CC2D]'>
+                  About
+                </li>
+                <li className='cursor-pointer duration-300 ease-in-out lg:hover:text-[#00CC2D]'>
+                  Our Ecosystem
+                </li>
+                <li className='cursor-pointer duration-300 ease-in-out lg:hover:text-[#00CC2D]'>
+                  Contact
+                </li>
               </ul>
             </div>
           </div>

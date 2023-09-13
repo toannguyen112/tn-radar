@@ -2,7 +2,7 @@ import IconStar from '../components/Icon/Star';
 
 export default function SectionLastNews() {
   return (
-    <section className='relative overflow-hidden pt-[68px] md:pt-[95px]	xl:pt-[136px]'>
+    <section className='relative overflow-hidden pt-[68px]	md:pt-[95px] xl:pt-[136px]'>
       <div className='px-[16px]	md:px-[62px] xl:px-[88px]'>
         <div className='grid grid-cols-12 border-b border-white'>
           <div className='relative col-span-7 border-r border-white md:col-span-9'>
@@ -14,7 +14,7 @@ export default function SectionLastNews() {
             </div>
           </div>
           <div className='col-span-5 md:col-span-3'>
-            <div className='title-1 ml-auto flex h-[40px] w-[120px] items-center justify-center rounded-[30px] bg-[#00CC2D] px-[8px] py-[5px] font-semibold text-white md:px-[11px] md:py-[7px] xl:h-[48px] xl:w-[152px] xl:px-[16px] xl:py-[10px] 2xl:h-[63px]'>
+            <div className='title-1 ml-auto flex h-[40px] w-[120px] cursor-pointer items-center justify-center rounded-[30px] bg-[#00CC2D] px-[8px] py-[5px] font-semibold text-white duration-300 ease-in-out md:px-[11px] md:py-[7px] lg:hover:bg-white lg:hover:text-[#00CC2D] xl:h-[48px] xl:w-[152px] xl:px-[16px] xl:py-[10px] 2xl:h-[63px]'>
               See All
             </div>
           </div>
