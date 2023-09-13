@@ -12,11 +12,11 @@ export default function SectionHero() {
         />
       </div>
       <div className='relative overflow-hidden'>
-        <div className='relative z-10 flex w-full items-center justify-between space-x-[98px]'>
+        <div className='relative z-10 flex w-full items-center justify-between space-x-[10px] md:space-x-[98px]'>
           <IconTextR />
           <IconTextD />
         </div>
-        <div className='absolute right-0 top-1/2 w-[350px] -translate-y-1/2 lg:w-[500px] xl:w-[700px] 2xl:-right-16 2xl:w-[1000px]'>
+        <div className='absolute right-0 top-1/2 w-[200px] -translate-y-1/2 md:w-[350px] lg:w-[500px] xl:w-[700px] 2xl:-right-16 2xl:w-[1000px]'>
           <div className='relative'>
             <div className='overflow-hidden rounded-full'>
               <video autoPlay muted loop>

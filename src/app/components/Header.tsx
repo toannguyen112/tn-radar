@@ -6,7 +6,7 @@ export default function Header() {
       <div className='relative flex h-[84px] w-full items-center border-b border-white 2xl:h-[121px]'>
         <div className='container'>
           <div className='flex items-center justify-between'>
-            <div className='w-full max-w-[180px] 2xl:max-w-[312px]'>
+            <div className='w-full max-w-[100px] md:max-w-[180px] 2xl:max-w-[312px]'>
               <img
                 src='/images/logo.png'
                 alt='wrapper hero'
@@ -14,7 +14,7 @@ export default function Header() {
               />
             </div>
 
-            <div>
+            <div className='hidden md:block'>
               <ul className='title-2 flex items-center space-x-[20px] font-semibold uppercase text-white xl:space-x-[40px] 2xl:space-x-[55px]'>
                 <li>Work</li>
                 <li>Our Services</li>

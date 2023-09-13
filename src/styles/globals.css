@@ -72,11 +72,11 @@
 
   /* #region  /**=========== Typography =========== */
   .h1 {
-    @apply font-primary text-[2rem] leading-[100%] lg:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4.0625rem]; /*65px*/
+    @apply font-primary text-[1.8rem] leading-[100%] lg:text-[2.5rem] xl:text-[3.5rem] 2xl:text-[4.0625rem]; /*65px*/
   }
 
   .h2 {
-    @apply font-primary text-[2rem] leading-[120%] xl:text-[3rem] 2xl:text-[3.75rem]; /*60px*/
+    @apply font-primary text-[1.5rem] leading-[120%] md:text-[2rem] xl:text-[3rem] 2xl:text-[3.75rem]; /*60px*/
   }
 
   .h3 {
@@ -88,11 +88,11 @@
   }
 
   .h5 {
-    @apply font-primary text-[1.5rem] leading-[150%] xl:text-[2.5rem]; /*40px*/
+    @apply font-primary text-[0.875rem] leading-[150%] md:text-[1.5rem] xl:text-[2.5rem]; /*40px*/
   }
 
   .h6 {
-    @apply font-primary text-[1.875rem] leading-[150%]; /*30px*/
+    @apply font-primary text-[1rem] leading-[150%] lg:text-[1.875rem]; /*30px*/
   }
 
   .title-1 {

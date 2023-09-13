@@ -2,7 +2,7 @@ export default function Optimism() {
   return (
     <svg
       width='100%'
-      height='166'
+      height='100%'
       viewBox='0 0 312 166'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

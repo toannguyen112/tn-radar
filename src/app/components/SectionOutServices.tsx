@@ -4,15 +4,15 @@ import IconExperience from '../components/Icon/Experience';
 
 export default function SectionOutServices() {
   return (
-    <section className='px-[44px]	pt-[93px]	md:px-[62px] md:pt-[130px] xl:px-[88px] xl:pt-[186px]'>
+    <section className='px-[16px]	pt-[93px]	md:px-[62px] md:pt-[130px] xl:px-[88px] xl:pt-[186px]'>
       <div className='justify-between space-y-[25px] lg:flex lg:space-x-[35px] lg:space-y-0	2xl:space-x-[50px]'>
         <div>
-          <div className='relative mx-auto h-full w-full max-w-[450px] lg:max-w-[802px]'>
+          <div className='relative mx-auto h-full w-full md:max-w-[450px] lg:max-w-[802px]'>
             <div className='absolute inset-0'>
               <img src='/images/bg-out-services.png' alt='wrapper hero' />
             </div>
             <div className='relative '>
-              <div className='space-y-[20px] pb-[18px] pl-[48px] pr-[39px] pt-[19px] text-white	md:pb-[25px] lg:pt-[27px]	2xl:space-y-[48px] 2xl:pb-[35px] 2xl:pl-[54px] 2xl:pt-[38px]'>
+              <div className='space-y-[5px] pb-[18px] pl-[20px] pr-[20px] pt-[19px] text-white md:space-y-[20px] md:pb-[25px] lg:pt-[27px]	2xl:space-y-[48px] 2xl:pb-[35px] 2xl:pl-[54px] 2xl:pt-[38px]'>
                 <div className='h2 ml-auto w-max font-extrabold uppercase'>
                   Our <br />
                   Services
@@ -28,8 +28,8 @@ export default function SectionOutServices() {
           </div>
         </div>
         <div className='flex flex-col justify-between space-y-[23px] md:space-y-[32px] 2xl:space-y-[45px]'>
-          <div className='flex items-center space-x-[15px]'>
-            <div className='h4 flex h-[60px] w-full flex-1 items-center rounded-md border border-[#323232] bg-[#18181A] px-[33px] py-[14px] font-extrabold uppercase text-[#00CC2D] lg:rounded-xl xl:h-[80px] 2xl:h-[110px]'>
+          <div className='flex items-center space-x-[10px] md:space-x-[15px]'>
+            <div className='h4 flex h-[60px] w-full flex-1 items-center rounded-md border border-[#323232] bg-[#18181A] px-[16px] py-[14px] font-extrabold uppercase text-[#00CC2D] md:px-[33px] lg:rounded-xl xl:h-[80px] 2xl:h-[110px]'>
               entertainment
             </div>
             <div className='flex h-[60px] w-[60px] items-center justify-center rounded-md border border-[#323232] bg-[#18181A] lg:rounded-xl xl:h-[80px] xl:w-[80px] 2xl:h-[110px] 2xl:w-[110px]'>
@@ -38,8 +38,8 @@ export default function SectionOutServices() {
               </div>
             </div>
           </div>
-          <div className='flex items-center space-x-[15px]'>
-            <div className='h4 flex h-[60px] w-full flex-1 items-center rounded-md border border-[#323232] bg-[#18181A] px-[33px] py-[14px] font-extrabold uppercase text-[#00CC2D] lg:rounded-xl xl:h-[80px] 2xl:h-[110px]'>
+          <div className='flex items-center space-x-[10px] md:space-x-[15px]'>
+            <div className='h4 flex h-[60px] w-full flex-1 items-center rounded-md border border-[#323232] bg-[#18181A] px-[16px] py-[14px] font-extrabold uppercase text-[#00CC2D] md:px-[33px] lg:rounded-xl xl:h-[80px] 2xl:h-[110px]'>
               experience
             </div>
             <div className='flex h-[60px] w-[60px] items-center justify-center  rounded-md border border-[#323232] bg-[#18181A] lg:rounded-xl xl:h-[80px] xl:w-[80px] 2xl:h-[110px] 2xl:w-[110px]'>
@@ -48,8 +48,8 @@ export default function SectionOutServices() {
               </div>
             </div>
           </div>
-          <div className='flex items-center space-x-[15px]'>
-            <div className='h4 flex h-[60px] w-max flex-1 items-center rounded-md border border-[#323232] bg-[#18181A] px-[33px] py-[14px] font-extrabold uppercase text-[#00CC2D] lg:rounded-xl xl:h-[80px] 2xl:h-[110px]'>
+          <div className='flex items-center space-x-[10px] md:space-x-[15px]'>
+            <div className='h4 flex h-[60px] w-max flex-1 items-center rounded-md border border-[#323232] bg-[#18181A] px-[16px] py-[14px] font-extrabold uppercase text-[#00CC2D] md:px-[33px] lg:rounded-xl xl:h-[80px] 2xl:h-[110px]'>
               earned
             </div>
             <div className='flex h-[60px] w-[60px] items-center justify-center rounded-md border border-[#323232] bg-[#18181A] lg:rounded-xl xl:h-[80px] xl:w-[80px] 2xl:h-[110px] 2xl:w-[110px]'>
