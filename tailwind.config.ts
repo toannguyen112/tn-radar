@@ -1,12 +1,34 @@
 import type { Config } from 'tailwindcss';
-import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    screens: {
+      xs: '425px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1440px',
+      '2xl': '1920px',
+      'max-2xl': { max: '1919px' },
+      'max-xl': { max: '1439px' },
+      'max-lg': { max: '1023px' },
+      'max-md': { max: '767px' },
+      'max-sm': { max: '639px' },
+      'max-xs': { max: '424px' },
+    },
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '1.5rem',
+          lg: '3rem',
+          xl: '3.875rem',
+        },
+      },
       fontFamily: {
-        primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        primary: ['Syne'],
       },
       colors: {
         primary: {

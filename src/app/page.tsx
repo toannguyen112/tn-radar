@@ -1,48 +1,29 @@
 'use client';
 
-import { OrbitControls, Sphere } from '@react-three/drei';
-import { Canvas, useFrame } from '@react-three/fiber';
-import React, { useRef } from 'react';
+import React from 'react';
 
-import pointsInner from '@/app/utils';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import SectionCulture from './components/SectionCulture';
+import SectionEcosystem from './components/SectionEcosystem';
+import SectionHero from './components/SectionHero';
+import SectionLastNews from './components/SectionLastNews';
+import SectionNetwork from './components/SectionNetwork';
+import SectionOutServices from './components/SectionOutServices';
 
 const HomePage = () => {
   return (
-    <div className='relative'>
-      <Canvas className='h-screen bg-[#101010]' style={{ height: '100hv' }}>
-        <OrbitControls />
-        <directionalLight />
-        <pointLight position={[-30, 0, -30]} power={10.0} />
-        <PointCircle />
-      </Canvas>
-    </div>
+    <main className='bg-[#0F0D11]'>
+      <Header />
+      <SectionHero />
+      <SectionNetwork />
+      <SectionLastNews />
+      <SectionOutServices />
+      <SectionCulture />
+      <SectionEcosystem />
+      <Footer />
+    </main>
   );
 };
 
-const PointCircle = () => {
-  const ref = useRef();
-  useFrame(({ clock }) => {
-    ref.current.rotation!.z = clock.getElapsedTime() * 0.05;
-  });
-  return (
-    <group ref={ref}>
-      {pointsInner.map((point) => (
-        <Point key={point.idx} position={point.position} color={point.color} />
-      ))}
-    </group>
-  );
-};
-
-const Point = ({ position, color }) => {
-  return (
-    <Sphere position={position} args={[0.1, 10, 10]}>
-      <meshStandardMaterial
-        color={color}
-        emissive={color}
-        emissiveIntensity={0.5}
-        roughness={0.5}
-      />
-    </Sphere>
-  );
-};
 export default HomePage;
