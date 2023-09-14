@@ -1,5 +1,5 @@
 import IconStar from '../components/Icon/Star';
-
+import SliderNews from '../components/SliderNews';
 export default function SectionLastNews() {
   return (
     <section className='relative overflow-hidden pt-[68px]	md:pt-[95px] xl:pt-[136px]'>
@@ -35,11 +35,7 @@ export default function SectionLastNews() {
         </div>
       </div>
       <div className='mt-[39px]	md:mt-[55px] xl:mt-[78px]'>
-        <div className='flex translate-x-[16px] space-x-[20px] whitespace-nowrap md:translate-x-[48px] lg:translate-x-[81px] xl:space-x-[30px]'>
-          <div className='h-[200px]  w-[450px] rounded-xl border border-[#323232] bg-[#18181A] md:h-[400px] lg:h-[500px] xl:h-[600px] xl:w-[688px] 2xl:h-[814px]'></div>
-          <div className='h-[200px]  w-[450px] rounded-xl border border-[#323232] bg-[#18181A] md:h-[400px] lg:h-[500px] xl:h-[600px] xl:w-[688px] 2xl:h-[814px]'></div>
-          <div className='h-[200px]  w-[450px] rounded-xl border border-[#323232] bg-[#18181A] md:h-[400px] lg:h-[500px] xl:h-[600px] xl:w-[688px] 2xl:h-[814px]'></div>
-        </div>
+        <SliderNews />
       </div>
     </section>
   );

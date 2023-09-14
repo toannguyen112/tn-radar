@@ -153,3 +153,7 @@
     background-size: 0 2px, 100% 2px;
   }
 }
+/* 
+.blur-slider {
+  mask-image: linear-gradient(-90deg,transparent,#000 0%,#000 9%,transparent);
+} */
