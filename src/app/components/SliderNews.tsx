@@ -1,16 +1,16 @@
 import React from 'react';
-import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
 
 declare module 'swiper/react' {
   interface SwiperProps {
-    modules?: any[];
-    pagination?: any;
-    effect?: string;
+    slidesPerView?: number;
+    spaceBetween?: number;
+    breakpoints?: any;
+    centeredSlides?: boolean;
+    speed?: number;
+    loop?: boolean;
   }
 }
 
@@ -38,7 +38,6 @@ function SliderNews() {
             spaceBetween: 30,
           },
         }}
-        modules={[Pagination]}
         className='mySwiper'
       >
         <SwiperSlide>
