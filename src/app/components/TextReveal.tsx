@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function TextReveal({ textArray, contain }: any) {
-  const textElements = useRef([]);
+  const textElements = useRef<(HTMLParagraphElement | null)[]>([]);
 
   useEffect(() => {
     textElements.current.forEach((text, index) => {
@@ -44,7 +44,7 @@ export default function TextReveal({ textArray, contain }: any) {
   }, []);
   return (
     <div className={`text-container relative overflow-hidden ${contain}`}>
-      {textArray.map((text, index) => (
+      {textArray.map((text: string, index: number) => (
         <div className='relative h-14 overflow-hidden' key={index}>
           <p
             ref={(el) => (textElements.current[index] = el)}
