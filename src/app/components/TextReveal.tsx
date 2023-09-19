@@ -1,59 +1,57 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useEffect, useRef } from 'react';
+import SplitType from 'split-type';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function TextReveal({ textArray, contain }: any) {
-  const textElements = useRef<(HTMLParagraphElement | null)[]>([]);
+const TextReveal = ({ text }: any) => {
+  const textRef = useRef(null); // Initialize with null
 
   useEffect(() => {
-    textElements.current.forEach((text, index) => {
+    const textElement = textRef.current;
+
+    if (textElement) {
+      const ourText = new SplitType(textElement, { types: 'chars' });
+      const chars = ourText.chars;
+
       gsap.timeline({
         scrollTrigger: {
-          trigger: `.${contain}`,
-          start: 'top center',
-          end: 'top center',
-          scrub: true,
-          // markers: true,
+          trigger: '.text-container',
+          start: 'top 80%', // Adjust the start trigger as needed
+          end: 'bottom 20%', // Adjust the end trigger as needed
+          scrub: true, // Smooth animation while scrolling
+          // toggleActions: 'play none none reverse', // Play animation on scroll in, reverse on scroll out
           onEnter: function () {
             gsap.fromTo(
-              text,
+              chars,
               {
+                y: 100,
                 opacity: 0,
-                y: 200,
-                skewY: 25,
-                stagger: {
-                  amount: 1,
-                },
-                ease: 'power4.out',
-                duration: 2,
               },
               {
-                opacity: 1,
                 y: 0,
-                skewY: 0,
-                ease: 'power4.out',
-                duration: 2,
+                opacity: 1,
+                stagger: 0.05,
+                ease: 'none',
               }
             );
           },
         },
       });
-    });
+    }
   }, []);
+
   return (
-    <div className={`text-container relative overflow-hidden ${contain}`}>
-      {textArray.map((text: string, index: number) => (
-        <div className='relative h-14 overflow-hidden' key={index}>
-          <p
-            ref={(el) => (textElements.current[index] = el)}
-            className='relative h-14 w-max translate-y-[200px] overflow-hidden font-extrabold uppercase  text-white'
-          >
-            {text}
-          </p>
-        </div>
-      ))}
+    <div className='text-container'>
+      <p
+        ref={textRef}
+        className='our-text overflow-hidden font-extrabold text-white'
+      >
+        {text}
+      </p>
     </div>
   );
-}
+};
+
+export default TextReveal;
