@@ -17,10 +17,11 @@ const TextReveal = ({ text }: any) => {
 
       gsap.timeline({
         scrollTrigger: {
-          trigger: '.text-container',
+          trigger: textElement, // Use the current text element as the trigger
           start: 'top 80%', // Adjust the start trigger as needed
           end: 'bottom 20%', // Adjust the end trigger as needed
           scrub: true, // Smooth animation while scrolling
+          // markers: true,
           // toggleActions: 'play none none reverse', // Play animation on scroll in, reverse on scroll out
           onEnter: function () {
             gsap.fromTo(
@@ -40,7 +41,7 @@ const TextReveal = ({ text }: any) => {
         },
       });
     }
-  }, []);
+  }, [text]);
 
   return (
     <div className='text-container'>

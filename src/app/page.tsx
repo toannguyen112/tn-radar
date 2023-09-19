@@ -19,6 +19,7 @@ const HomePage = () => {
       <SectionNetwork />
       <SectionLastNews />
       <SectionOutServices />
+      {/* <Slider /> */}
       <SectionCulture />
       <SectionEcosystem />
       <Footer />
