@@ -10,6 +10,7 @@ import SectionHero from './components/SectionHero';
 import SectionLastNews from './components/SectionLastNews';
 import SectionNetwork from './components/SectionNetwork';
 import SectionOutServices from './components/SectionOutServices';
+import Slider from './components/Slider';
 
 const HomePage = () => {
   return (
@@ -19,7 +20,7 @@ const HomePage = () => {
       <SectionNetwork />
       <SectionLastNews />
       <SectionOutServices />
-      {/* <Slider /> */}
+      <Slider />
       <SectionCulture />
       <SectionEcosystem />
       <Footer />
