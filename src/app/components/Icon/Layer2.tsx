@@ -3180,9 +3180,9 @@ export default function Layer2() {
           y2='40.8471'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#9B8977' />
-          <stop offset='0.52' stop-color='#D8C7B6' />
-          <stop offset='1' stop-color='#AA9785' />
+          <stop stopColor='#9B8977' />
+          <stop offset='0.52' stopColor='#D8C7B6' />
+          <stop offset='1' stopColor='#AA9785' />
         </linearGradient>
         <clipPath id='clip0_264_4906'>
           <rect

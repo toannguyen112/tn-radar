@@ -27,8 +27,8 @@ export default function SectionCulture() {
             <SliderScroll />
           </div>
         </div>
-        <div className='h1 relative z-20 text-right text-white '>
-          点と点を結びつける。
+        <div className='h1 relative z-20 text-right text-white'>
+          <TextReveal text='点と点を結びつける。' />
         </div>
       </div>
     </section>

@@ -70,14 +70,14 @@ export default function Pi() {
           y2='89.9906'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#006AA2' />
-          <stop offset='0.01' stop-color='#006BA2' />
-          <stop offset='0.13' stop-color='#158BB5' />
-          <stop offset='0.25' stop-color='#25A5C4' />
-          <stop offset='0.38' stop-color='#32BAD0' />
-          <stop offset='0.53' stop-color='#3BC8D8' />
-          <stop offset='0.71' stop-color='#41D1DD' />
-          <stop offset='1' stop-color='#43D4DF' />
+          <stop stopColor='#006AA2' />
+          <stop offset='0.01' stopColor='#006BA2' />
+          <stop offset='0.13' stopColor='#158BB5' />
+          <stop offset='0.25' stopColor='#25A5C4' />
+          <stop offset='0.38' stopColor='#32BAD0' />
+          <stop offset='0.53' stopColor='#3BC8D8' />
+          <stop offset='0.71' stopColor='#41D1DD' />
+          <stop offset='1' stopColor='#43D4DF' />
         </linearGradient>
         <linearGradient
           id='paint1_linear_264_49'
@@ -87,20 +87,20 @@ export default function Pi() {
           y2='38.2668'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#43D4DF' />
-          <stop offset='0.04' stop-color='#40CFDC' />
-          <stop offset='0.09' stop-color='#37C1D4' />
-          <stop offset='0.14' stop-color='#29ABC7' />
-          <stop offset='0.19' stop-color='#158BB5' />
-          <stop offset='0.24' stop-color='#006AA2' />
-          <stop offset='0.39' stop-color='#006AA2' />
-          <stop offset='0.41' stop-color='#0C7EAD' />
-          <stop offset='0.45' stop-color='#1D98BC' />
-          <stop offset='0.5' stop-color='#2BAEC9' />
-          <stop offset='0.56' stop-color='#36BFD3' />
-          <stop offset='0.63' stop-color='#3DCBDA' />
-          <stop offset='0.73' stop-color='#41D2DD' />
-          <stop offset='1' stop-color='#43D4DF' />
+          <stop stopColor='#43D4DF' />
+          <stop offset='0.04' stopColor='#40CFDC' />
+          <stop offset='0.09' stopColor='#37C1D4' />
+          <stop offset='0.14' stopColor='#29ABC7' />
+          <stop offset='0.19' stopColor='#158BB5' />
+          <stop offset='0.24' stopColor='#006AA2' />
+          <stop offset='0.39' stopColor='#006AA2' />
+          <stop offset='0.41' stopColor='#0C7EAD' />
+          <stop offset='0.45' stopColor='#1D98BC' />
+          <stop offset='0.5' stopColor='#2BAEC9' />
+          <stop offset='0.56' stopColor='#36BFD3' />
+          <stop offset='0.63' stopColor='#3DCBDA' />
+          <stop offset='0.73' stopColor='#41D2DD' />
+          <stop offset='1' stopColor='#43D4DF' />
         </linearGradient>
         <linearGradient
           id='paint2_linear_264_49'
@@ -110,14 +110,14 @@ export default function Pi() {
           y2='18.2845'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#006AA2' />
-          <stop offset='0.01' stop-color='#006BA2' />
-          <stop offset='0.13' stop-color='#158BB5' />
-          <stop offset='0.25' stop-color='#25A5C4' />
-          <stop offset='0.38' stop-color='#32BAD0' />
-          <stop offset='0.53' stop-color='#3BC8D8' />
-          <stop offset='0.71' stop-color='#41D1DD' />
-          <stop offset='1' stop-color='#43D4DF' />
+          <stop stopColor='#006AA2' />
+          <stop offset='0.01' stopColor='#006BA2' />
+          <stop offset='0.13' stopColor='#158BB5' />
+          <stop offset='0.25' stopColor='#25A5C4' />
+          <stop offset='0.38' stopColor='#32BAD0' />
+          <stop offset='0.53' stopColor='#3BC8D8' />
+          <stop offset='0.71' stopColor='#41D1DD' />
+          <stop offset='1' stopColor='#43D4DF' />
         </linearGradient>
         <linearGradient
           id='paint3_linear_264_49'
@@ -127,14 +127,14 @@ export default function Pi() {
           y2='36.7879'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#006AA2' />
-          <stop offset='0.01' stop-color='#006BA2' />
-          <stop offset='0.13' stop-color='#158BB5' />
-          <stop offset='0.25' stop-color='#25A5C4' />
-          <stop offset='0.38' stop-color='#32BAD0' />
-          <stop offset='0.53' stop-color='#3BC8D8' />
-          <stop offset='0.71' stop-color='#41D1DD' />
-          <stop offset='1' stop-color='#43D4DF' />
+          <stop stopColor='#006AA2' />
+          <stop offset='0.01' stopColor='#006BA2' />
+          <stop offset='0.13' stopColor='#158BB5' />
+          <stop offset='0.25' stopColor='#25A5C4' />
+          <stop offset='0.38' stopColor='#32BAD0' />
+          <stop offset='0.53' stopColor='#3BC8D8' />
+          <stop offset='0.71' stopColor='#41D1DD' />
+          <stop offset='1' stopColor='#43D4DF' />
         </linearGradient>
         <linearGradient
           id='paint4_linear_264_49'
@@ -144,14 +144,14 @@ export default function Pi() {
           y2='16.0408'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#006AA2' />
-          <stop offset='0.01' stop-color='#006BA2' />
-          <stop offset='0.13' stop-color='#158BB5' />
-          <stop offset='0.25' stop-color='#25A5C4' />
-          <stop offset='0.38' stop-color='#32BAD0' />
-          <stop offset='0.53' stop-color='#3BC8D8' />
-          <stop offset='0.71' stop-color='#41D1DD' />
-          <stop offset='1' stop-color='#43D4DF' />
+          <stop stopColor='#006AA2' />
+          <stop offset='0.01' stopColor='#006BA2' />
+          <stop offset='0.13' stopColor='#158BB5' />
+          <stop offset='0.25' stopColor='#25A5C4' />
+          <stop offset='0.38' stopColor='#32BAD0' />
+          <stop offset='0.53' stopColor='#3BC8D8' />
+          <stop offset='0.71' stopColor='#41D1DD' />
+          <stop offset='1' stopColor='#43D4DF' />
         </linearGradient>
         <linearGradient
           id='paint5_linear_264_49'
@@ -161,13 +161,13 @@ export default function Pi() {
           y2='0.5'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#006BA2' />
-          <stop offset='0.12' stop-color='#158BB5' />
-          <stop offset='0.24' stop-color='#25A5C4' />
-          <stop offset='0.38' stop-color='#32BAD0' />
-          <stop offset='0.53' stop-color='#3BC8D8' />
-          <stop offset='0.71' stop-color='#41D1DD' />
-          <stop offset='1' stop-color='#43D4DF' />
+          <stop stopColor='#006BA2' />
+          <stop offset='0.12' stopColor='#158BB5' />
+          <stop offset='0.24' stopColor='#25A5C4' />
+          <stop offset='0.38' stopColor='#32BAD0' />
+          <stop offset='0.53' stopColor='#3BC8D8' />
+          <stop offset='0.71' stopColor='#41D1DD' />
+          <stop offset='1' stopColor='#43D4DF' />
         </linearGradient>
         <linearGradient
           id='paint6_linear_264_49'
@@ -177,13 +177,13 @@ export default function Pi() {
           y2='44.9245'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#006BA2' />
-          <stop offset='0.12' stop-color='#158BB5' />
-          <stop offset='0.24' stop-color='#25A5C4' />
-          <stop offset='0.38' stop-color='#32BAD0' />
-          <stop offset='0.53' stop-color='#3BC8D8' />
-          <stop offset='0.71' stop-color='#41D1DD' />
-          <stop offset='1' stop-color='#43D4DF' />
+          <stop stopColor='#006BA2' />
+          <stop offset='0.12' stopColor='#158BB5' />
+          <stop offset='0.24' stopColor='#25A5C4' />
+          <stop offset='0.38' stopColor='#32BAD0' />
+          <stop offset='0.53' stopColor='#3BC8D8' />
+          <stop offset='0.71' stopColor='#41D1DD' />
+          <stop offset='1' stopColor='#43D4DF' />
         </linearGradient>
         <linearGradient
           id='paint7_linear_264_49'
@@ -193,13 +193,13 @@ export default function Pi() {
           y2='38.807'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#006BA2' />
-          <stop offset='0.12' stop-color='#158BB5' />
-          <stop offset='0.24' stop-color='#25A5C4' />
-          <stop offset='0.38' stop-color='#32BAD0' />
-          <stop offset='0.53' stop-color='#3BC8D8' />
-          <stop offset='0.71' stop-color='#41D1DD' />
-          <stop offset='1' stop-color='#43D4DF' />
+          <stop stopColor='#006BA2' />
+          <stop offset='0.12' stopColor='#158BB5' />
+          <stop offset='0.24' stopColor='#25A5C4' />
+          <stop offset='0.38' stopColor='#32BAD0' />
+          <stop offset='0.53' stopColor='#3BC8D8' />
+          <stop offset='0.71' stopColor='#41D1DD' />
+          <stop offset='1' stopColor='#43D4DF' />
         </linearGradient>
         <clipPath id='clip0_264_49'>
           <rect
