@@ -178,25 +178,19 @@
   color: #fff;
 }
 
-.fl-tests {
-  overflow: scroll;
-  overflow-x: hidden;
-  height: 100vh;
-}
-.module {
-  height: 100%;
+.image-slider {
+  overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
-}
-
-#container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
   transform-style: preserve-3d;
+  transform: rotate(8deg);
+  padding: 0 50%;
+}
 
-  transform: rotate(10deg);
+.slider-image {
+  @apply aspect-video;
+  width: 600px;
+  height: 450px;
 }
