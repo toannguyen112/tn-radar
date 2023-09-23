@@ -32,15 +32,43 @@ export default function SliderScroll() {
 
   return (
     <div className='image-slider'>
-      {Array.from({ length: 6 }, (_, index) => (
-        <div className='slider-image' key={index}>
-          <img
-            src='images/image-demo.jpeg'
-            alt={`Image ${index + 1}`}
-            className='slider-image-content'
-          />
-        </div>
-      ))}
+      {/* {Array.from({ length: 6 }, (_, index) => ( */}
+      <div className='slider-image'>
+        <img
+          src='images/image-demo.jpeg'
+          alt='image'
+          className='slider-image-content'
+        />
+      </div>
+      <div className='slider-image'>
+        <img
+          src='images/image-demo.jpeg'
+          alt='image'
+          className='slider-image-content'
+        />
+      </div>
+      <div className='slider-image'>
+        <img
+          src='images/image-demo.jpeg'
+          alt='image'
+          className='slider-image-content'
+        />
+      </div>
+      <div className='slider-image'>
+        <img
+          src='images/image-demo.jpeg'
+          alt='image'
+          className='slider-image-content'
+        />
+      </div>
+      <div className='slider-image'>
+        <img
+          src='images/image-demo.jpeg'
+          alt='image'
+          className='slider-image-content'
+        />
+      </div>
+      {/* ))} */}
     </div>
   );
 }

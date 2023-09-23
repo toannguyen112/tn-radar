@@ -187,14 +187,14 @@
 .slider-image {
   width: 600px;
   height: 450px;
-  flex-shrink: 0; /* Prevent images from shrinking within the container */
-  margin-right: 8px; /* Adjust spacing between images */
+  flex-shrink: 0;
+  margin-right: 8px;
 }
 
 .slider-image-content {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure images cover the entire container */
+  object-fit: cover;
 }
 .fade-skew {
   transform-style: preserve-3d;
