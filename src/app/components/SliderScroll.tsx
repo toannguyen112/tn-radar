@@ -1,7 +1,5 @@
-import { gsap } from 'gsap/all'; // Import all GSAP plugins
+import { gsap } from 'gsap/all';
 import React, { useEffect } from 'react';
-
-// import 'gsap/dist/gsap.css'; // Import GSAP CSS for basic styles
 
 export default function SliderScroll() {
   useEffect(() => {
@@ -22,9 +20,10 @@ export default function SliderScroll() {
         scrollTrigger: {
           trigger: slider,
           start: 'top top',
-          end: 'bottom center',
+          end: 'bottom center+=200px',
           scrub: 0,
           pin: true,
+          // markers: true,
         },
       });
     }

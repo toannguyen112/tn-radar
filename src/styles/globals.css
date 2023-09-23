@@ -197,6 +197,7 @@
   object-fit: cover;
 }
 .fade-skew {
+
   transform-style: preserve-3d;
   transform: rotate(8deg);
 }
