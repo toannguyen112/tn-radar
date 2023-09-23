@@ -23,7 +23,7 @@ export default function SliderScroll() {
           end: 'bottom center+=200px',
           scrub: 0,
           pin: true,
-          markers: true,
+          // markers: true,
         },
       });
     }
