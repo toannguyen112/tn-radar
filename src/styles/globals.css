@@ -179,18 +179,24 @@
 }
 
 .image-slider {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-  transform-style: preserve-3d;
-  transform: rotate(8deg);
-  padding: 0 50%;
+  overflow: hidden; /* Ensure images outside the container are hidden */
 }
 
 .slider-image {
-  @apply aspect-video;
   width: 600px;
   height: 450px;
+  flex-shrink: 0; /* Prevent images from shrinking within the container */
+  margin-right: 8px; /* Adjust spacing between images */
+}
+
+.slider-image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the entire container */
+}
+.fade-skew {
+  transform-style: preserve-3d;
+  transform: rotate(8deg);
 }

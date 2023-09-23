@@ -1,8 +1,7 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap/all'; // Import all GSAP plugins
 import React, { useEffect } from 'react';
 
-gsap.registerPlugin(ScrollTrigger);
+// import 'gsap/dist/gsap.css'; // Import GSAP CSS for basic styles
 
 export default function SliderScroll() {
   useEffect(() => {
@@ -22,31 +21,26 @@ export default function SliderScroll() {
         ease: 'none',
         scrollTrigger: {
           trigger: slider,
-          start: 'top-=200% top',
+          start: 'top top',
           end: 'bottom center',
-          scrub: 0.5,
-          // pin: true,
-          // markers: true,
+          scrub: 0,
+          pin: true,
         },
       });
     }
   }, []);
 
   return (
-    <div className='relative w-[1920px]'>
-      <div className='image-slider'>
-        <div className='slider-image'></div>
-        {Array.from({ length: 4 }, (_, index) => (
-          <div className='slider-image' key={index}>
-            <img
-              src='images/image-demo.jpeg'
-              alt={`Image ${index + 1}`}
-              className='slider-image-content'
-            />
-          </div>
-        ))}
-        <div className='slider-image'></div>
-      </div>
+    <div className='image-slider'>
+      {Array.from({ length: 6 }, (_, index) => (
+        <div className='slider-image' key={index}>
+          <img
+            src='images/image-demo.jpeg'
+            alt={`Image ${index + 1}`}
+            className='slider-image-content'
+          />
+        </div>
+      ))}
     </div>
   );
 }

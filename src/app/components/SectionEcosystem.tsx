@@ -14,7 +14,7 @@ import IconZksync from '../components/Icon/Zksync';
 
 export default function SectionEcosystem() {
   return (
-    <section className='pb-[53px]	md:pb-[74px] 2xl:pb-[106px]'>
+    <section className='pb-[53px]	md:pb-[74px] xl:pt-[258px] 2xl:pb-[106px]'>
       <div className='relative overflow-hidden px-[16px] lg:px-[62px] xl:px-[88px]'>
         <div className='h1 text-center font-extrabold uppercase text-white'>
           Our Ecosystem

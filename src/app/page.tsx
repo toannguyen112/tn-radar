@@ -4,6 +4,7 @@ import React from 'react';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
+import SectionConnect from './components/SectionConnect';
 import SectionCulture from './components/SectionCulture';
 import SectionEcosystem from './components/SectionEcosystem';
 import SectionHero from './components/SectionHero';
@@ -20,6 +21,7 @@ const HomePage = () => {
       <SectionLastNews />
       <SectionOutServices />
       <SectionCulture />
+      <SectionConnect />
       <SectionEcosystem />
       <Footer />
     </main>
