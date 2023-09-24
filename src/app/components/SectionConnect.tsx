@@ -13,9 +13,11 @@ export default function SectionConnect() {
         </div>
       </div>
 
-      <div className='fade-skew translate-y-[150px]'>
-        <div className='relative'>
-          <SliderScroll />
+      <div>
+        <div className='fade-skew'>
+          <div className='relative h-[500px] translate-y-[150px]'>
+            <SliderScroll />
+          </div>
         </div>
       </div>
       <div className='absolute bottom-0 left-0 px-[16px] lg:px-[62px] xl:px-[88px]'>

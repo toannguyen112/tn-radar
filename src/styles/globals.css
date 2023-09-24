@@ -181,7 +181,8 @@
 .image-slider {
   display: flex;
   flex-direction: row;
-  overflow: hidden; /* Ensure images outside the container are hidden */
+  overflow: hidden; 
+  transform: translate(0px, 50px) !important;
 }
 
 .slider-image {
@@ -196,8 +197,21 @@
   height: 100%;
   object-fit: cover;
 }
-.fade-skew {
 
+
+.fade-skew {
+  /* @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-full; */
   transform-style: preserve-3d;
   transform: rotate(8deg);
 }
+
+/* .slider-contain {
+  margin: 0 auto;
+  pointer-events: none;
+  perspective-origin: 50%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  height: 900px;
+  max-width: 1440px;
+  width: 100%;
+} */
