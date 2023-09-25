@@ -1,25 +1,30 @@
 import { gsap } from 'gsap/all';
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 
 export default function SliderScroll() {
-  useEffect(() => {
-    const slider = document.querySelector('.image-slider');
-    const images = document.querySelectorAll('.slider-image');
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const slider = document.querySelector('.image-slider');
+      const images = document.querySelectorAll('.slider-image');
 
-    if (slider && images.length > 0) {
-      gsap.to(images, {
-        x: -1000,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: slider,
-          start: 'top top',
-          end: 'bottom center',
-          scrub: 0,
-          pin: true,
-          // markers: true,
-        },
-      });
-    }
+      if (slider && images.length > 0) {
+        gsap.to(images, {
+          x: -1000,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: slider,
+            start: 'top top',
+            end: 'bottom center',
+            scrub: 0,
+            pin: slider,
+            pinSpacing: false,
+
+            // markers: true,
+          },
+        });
+      }
+    });
+    return () => ctx.revert(); // <- cleanup!
   }, []);
 
   return (
