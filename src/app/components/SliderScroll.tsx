@@ -10,12 +10,13 @@ export default function SliderScroll() {
       if (slider && images.length > 0) {
         gsap.to(images, {
           x: -1000,
-          ease: 'none',
+          ease: 'power2',
+          // duration: 2,
           scrollTrigger: {
             trigger: slider,
             start: 'top top',
             end: 'bottom center',
-            scrub: 0,
+            scrub: 2,
             pin: slider,
             pinSpacing: false,
 
