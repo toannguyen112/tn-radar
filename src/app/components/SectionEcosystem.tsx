@@ -1,6 +1,7 @@
 import IconArbitrum from '../components/Icon/Arbitrum';
 import IconBsc from '../components/Icon/Bsc';
 import IconChainlink from '../components/Icon/Chainlink';
+import IconCosmosMacro from '../components/Icon/CosmosMacro';
 import IconDao from '../components/Icon/Dao';
 import IconDiscord from '../components/Icon/Discord';
 import IconLayer2 from '../components/Icon/Layer2';
@@ -10,6 +11,7 @@ import IconPi from '../components/Icon/Pi';
 import IconPolygon from '../components/Icon/Polygon';
 import IconTelegram from '../components/Icon/Telegram';
 import IconTwitter from '../components/Icon/Twitter';
+import IconWeb3Macro from '../components/Icon/Web3Macro';
 import IconZksync from '../components/Icon/Zksync';
 
 export default function SectionEcosystem() {
@@ -28,12 +30,21 @@ export default function SectionEcosystem() {
             </div>
           </div>
           <div className='w-max rounded-full border border-[#00CC2D] px-[50px] py-[24px] text-center text-white max-sm:mx-auto lg:absolute lg:top-[45%] xl:top-[50%] 2xl:top-[40%]'>
-            <div className='w-full max-w-[120px] lg:max-w-[200px] xl:max-w-[262px] 2xl:max-w-[365px]'>
-              <img
-                src='/images/radar.png'
-                alt='wrapper hero'
-                className='h-full w-full object-cover'
-              />
+            <div className='relative'>
+              <div className='fade-in w-full max-w-[120px] lg:max-w-[200px] xl:max-w-[262px] 2xl:max-w-[365px]'>
+                <img
+                  src='/images/radar.png'
+                  alt='wrapper hero'
+                  className='h-full w-full object-cover'
+                />
+              </div>
+              <div className='fade-out absolute inset-0 max-w-[120px] lg:max-w-[200px] xl:max-w-[262px] 2xl:max-w-[365px]'>
+                <img
+                  src='/images/micro.png'
+                  alt='wrapper hero'
+                  className='h-full w-full'
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -150,6 +161,31 @@ export default function SectionEcosystem() {
               </div>
             </div>
           </div>
+          <div className='border-b border-t border-[#00CC2D] py-[22px]	md:py-[31px] 2xl:py-[44px]'>
+            <div className='flex items-center justify-center space-x-[20px]	md:space-x-[32px]	2xl:space-x-[80px]'>
+              <div className='items-center space-x-[10px] border-r border-[#00CC2D] pr-[83px] md:pr-[80px] xl:flex	xl:space-x-[20px]	2xl:pr-[165px]'>
+                <div>
+                  <IconWeb3Macro />
+                </div>
+                <div className='flex space-x-[10px] xl:block xl:space-x-0 xl:space-y-[10px] 2xl:space-y-[15px]'>
+                  <IconDiscord />
+                  <IconTelegram />
+                  <IconTwitter />
+                </div>
+              </div>
+
+              <div className='items-center space-x-[10px] xl:flex xl:space-x-[20px]'>
+                <div>
+                  <IconCosmosMacro />
+                </div>
+                <div className='flex space-x-[10px] xl:block xl:space-x-0 xl:space-y-[10px] 2xl:space-y-[15px]'>
+                  <IconDiscord />
+                  <IconTelegram />
+                  <IconTwitter />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className='flex w-full flex-col space-y-12 md:hidden'>
           <div className='flex w-full items-center justify-between space-x-10'>
@@ -246,6 +282,22 @@ export default function SectionEcosystem() {
             <div className='w-full'>
               <IconDao />
             </div>
+            <div className='space-y-2'>
+              <IconDiscord />
+              <IconTelegram />
+              <IconTwitter />
+            </div>
+          </div>
+          <div className='flex w-full items-center justify-between '>
+            <IconWeb3Macro />
+            <div className='space-y-2'>
+              <IconDiscord />
+              <IconTelegram />
+              <IconTwitter />
+            </div>
+          </div>
+          <div className='flex w-full items-center justify-between '>
+            <IconCosmosMacro />
             <div className='space-y-2'>
               <IconDiscord />
               <IconTelegram />
