@@ -1,32 +1,39 @@
-import React from 'react';
+import Marquee from 'react-fast-marquee';
 
-import SliderScroll from '../components/SliderScroll';
-import TextReveal from '../components/TextReveal';
+import TextReveal from './TextReveal';
 
 export default function SectionConnect() {
   return (
-    <div className='relative h-[200vh]'>
-      <div className='sticky top-0 h-[100vh] overflow-hidden'>
-        <div className='absolute left-0 top-0 px-[16px] lg:px-[62px] xl:px-[88px]'>
-          <div className='h1 relative z-20 '>
-            <TextReveal text='Connecting' />
-            <TextReveal text='the dots' />
-          </div>
-        </div>
-
-        <div>
-          <div className='fade-skew'>
-            <div className='relative h-[500px] translate-y-[150px]'>
-              <SliderScroll />
-            </div>
-          </div>
-        </div>
-        <div className='absolute bottom-0 left-0 px-[16px] lg:px-[62px] xl:px-[88px]'>
-          <div className='h1 relative z-20 text-right text-white'>
-            <TextReveal text='点と点を結びつける。' />
-          </div>
+    <section className='pt-[186px]'>
+      <div className='mb-12 px-[88px]'>
+        <div className='h1  font-extrabold'>
+          <TextReveal text='Connecting' />
+          <TextReveal text='The dots' />
         </div>
       </div>
-    </div>
+      <div className='relative'>
+        <div className='h1 absolute right-[88px] top-0 space-y-3 text-[#00CC2D]'>
+          <p>点</p>
+          <p>と</p>
+          <p>点</p>
+          <p>を</p>
+          <p>結</p>
+          <p>び</p>
+          <p>つ</p>
+          <p>け</p>
+          <p>る</p>
+        </div>
+        <div className='pr-[200px]'>
+          <Marquee speed={70}>
+            {Array.from({ length: 10 }, (_, index) => (
+              <div
+                key={index}
+                className='mx-[15px] h-[814px] w-[688px] rounded-xl border border-[#323232] bg-[#18181A]'
+              ></div>
+            ))}
+          </Marquee>
+        </div>
+      </div>
+    </section>
   );
 }

@@ -4,7 +4,7 @@ import IconExperience from '../components/Icon/Experience';
 
 export default function SectionOutServices() {
   return (
-    <section className='relative overflow-hidden px-[16px] pt-[93px] md:px-[62px] md:pt-[130px] xl:px-[88px] xl:pt-[186px]'>
+    <section className='relative overflow-hidden px-[16px] pb-[92px] pt-[93px]	md:px-[62px] md:pb-[128px] md:pt-[130px] xl:px-[88px] xl:pt-[186px] 2xl:pb-[183px]'>
       <div className='relative z-10'>
         <div className='justify-between space-y-[25px] lg:flex lg:space-x-[35px] lg:space-y-0	2xl:space-x-[50px]'>
           <div>

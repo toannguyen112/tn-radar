@@ -5,12 +5,12 @@ import React from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import SectionConnect from './components/SectionConnect';
-import SectionCulture from './components/SectionCulture';
 import SectionEcosystem from './components/SectionEcosystem';
 import SectionHero from './components/SectionHero';
 import SectionLastNews from './components/SectionLastNews';
 import SectionNetwork from './components/SectionNetwork';
 import SectionOutServices from './components/SectionOutServices';
+import SectionPower from './components/SectionPower';
 
 const HomePage = () => {
   return (
@@ -20,7 +20,7 @@ const HomePage = () => {
       <SectionNetwork />
       <SectionLastNews />
       <SectionOutServices />
-      <SectionCulture />
+      <SectionPower />
       <SectionConnect />
       <SectionEcosystem />
       <Footer />
