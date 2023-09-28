@@ -1,5 +1,5 @@
 import { gsap } from 'gsap/all';
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 export default function SliderScroll() {
   const sliderRef = useRef<HTMLDivElement | null>(null);
@@ -32,23 +32,50 @@ export default function SliderScroll() {
     }
   }, []);
 
+  const [powers, setPowers] = useState([]);
+  const token = process.env.NEXT_PUBLIC_TOKEN;
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(
+          'https://strapi-be-hg6l.onrender.com/api/posts-radars?filters[isPower][$eq]=true&populate=*',
+          {
+            method: 'GET',
+            headers: {
+              'Content-type': 'application/json',
+              Authorization: `Bearer ${token}`, // notice the Bearer before your token
+            },
+          }
+        );
+        const data = await response.json();
+        setPowers(data.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setPowers([]); // Set 'powers' to an empty array in case of an error
+      }
+    }
+    fetchData();
+  }, []);
+
   return (
     <div className='relative'>
       <div className='image-slider' ref={sliderRef}>
         <div className='slider-image'></div>
-        {Array.from({ length: 3 }, (_, index) => (
-          <div
-            key={index}
-            className='slider-image'
-            ref={(el) => (imageRefs.current[index] = el)}
-          >
-            <img
-              src='images/image-demo.jpeg'
-              alt='image'
-              className='slider-image-content'
-            />
-          </div>
-        ))}
+        {Array.isArray(powers)
+          ? powers.map((power, index) => (
+              <div
+                key={index}
+                className='slider-image'
+                ref={(el) => (imageRefs.current[index] = el)}
+              >
+                <img
+                  src={`https://strapi-be-hg6l.onrender.com${power.attributes?.thumbnail.data.attributes.url}`}
+                  alt='image'
+                  className='slider-image-content'
+                />
+              </div>
+            ))
+          : null}
         <div className='slider-image'></div>
       </div>
       <div className='h1 absolute right-[65px] top-0 rotate-[-8deg] font-extrabold text-white'>
