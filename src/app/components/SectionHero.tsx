@@ -1,3 +1,5 @@
+import { TypeAnimation } from 'react-type-animation';
+
 import IconTextD from '../components/Icon/TextD';
 import IconTextR from '../components/Icon/TextR';
 
@@ -11,9 +13,23 @@ export default function SectionHero() {
           className='h-full w-full object-cover'
         />
       </div>
-      <div className='relative overflow-hidden'>
+      <div className='relative overflow-hidden '>
         <div className='relative z-10 flex w-full items-center justify-between space-x-[10px] md:space-x-[98px]'>
+          <div className='absolute left-[13%] top-[200px] z-10'>
+            <TypeAnimation
+              sequence={['レーダーネットワーク', 1000]}
+              wrapper='span'
+              speed={20}
+              style={{
+                fontSize: '2em',
+                display: 'inline-block',
+                color: '#00CC2D',
+              }}
+              repeat={Infinity}
+            />
+          </div>
           <IconTextR />
+
           <IconTextD />
         </div>
         <div className='absolute right-0 top-1/2 w-[200px] -translate-y-1/2 md:w-[350px] lg:w-[500px] xl:w-[700px] 2xl:-right-16 2xl:w-[1000px]'>

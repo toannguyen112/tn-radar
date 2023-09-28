@@ -30,6 +30,7 @@
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.1",
     "react-icons": "^4.10.1",
+    "react-type-animation": "^3.1.0",
     "scrollmagic": "^2.0.8",
     "split-type": "^0.3.3",
     "swiper": "^10.2.0",

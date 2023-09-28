@@ -1,6 +1,6 @@
-import IconDiscord from '../components/Icon/Discord';
-import IconTelegram from '../components/Icon/Telegram';
-import IconTwitter from '../components/Icon/Twitter';
+import IconDiscord from '../components/Icon/DiscordFooter';
+import IconTelegram from '../components/Icon/TelegramFooter';
+import IconTwitter from '../components/Icon/TwitterFooter';
 
 export default function Footer() {
   return (
@@ -60,9 +60,15 @@ export default function Footer() {
               <div className='space-y-[20px]'>
                 <div className='h6 font-bold text-[#00CC2D]'>Contact</div>
                 <div className='flex items-center space-x-[19px]'>
-                  <IconDiscord />
-                  <IconTelegram />
-                  <IconTwitter />
+                  <div className='flex h-12 w-12 items-center justify-center rounded border-2 border-white duration-300 ease-in-out lg:hover:border-[#00CC2D] lg:hover:bg-[#00CC2D]'>
+                    <IconDiscord />
+                  </div>
+                  <div className='flex h-12 w-12 items-center justify-center rounded border-2 border-white duration-300 ease-in-out lg:hover:border-[#00CC2D] lg:hover:bg-[#00CC2D]'>
+                    <IconTelegram />
+                  </div>
+                  <div className='flex h-12 w-12 items-center justify-center rounded border-2 border-white duration-300 ease-in-out lg:hover:border-[#00CC2D] lg:hover:bg-[#00CC2D]'>
+                    <IconTwitter />
+                  </div>
                 </div>
               </div>
               <div className='title-2 space-y-[20px] text-[#737373] xl:space-y-[30px]'>

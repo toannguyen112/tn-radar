@@ -158,6 +158,11 @@
   mask-image: linear-gradient(-90deg,transparent,#000 0%,#000 9%,transparent);
 } */
 
+.text-col {
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+}
+
 .containers {
   width: 100vw;
   display: flex;

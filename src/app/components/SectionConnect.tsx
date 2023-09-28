@@ -1,6 +1,7 @@
 import Marquee from 'react-fast-marquee';
 
 import TextReveal from './TextReveal';
+import TextRevealCol from './TextRevealCol';
 
 export default function SectionConnect() {
   return (
@@ -12,16 +13,8 @@ export default function SectionConnect() {
         </div>
       </div>
       <div className='relative'>
-        <div className='h1 absolute right-[88px] top-0 space-y-3 text-[#00CC2D]'>
-          <p>点</p>
-          <p>と</p>
-          <p>点</p>
-          <p>を</p>
-          <p>結</p>
-          <p>び</p>
-          <p>つ</p>
-          <p>け</p>
-          <p>る</p>
+        <div className='h1 absolute right-[88px] top-0'>
+          <TextRevealCol text='点と点を結びつける' />
         </div>
         <div className='pr-[200px]'>
           <Marquee speed={70}>
