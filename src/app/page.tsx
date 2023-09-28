@@ -11,7 +11,6 @@ import SectionLastNews from './components/SectionLastNews';
 import SectionNetwork from './components/SectionNetwork';
 import SectionOutServices from './components/SectionOutServices';
 import SectionPower from './components/SectionPower';
-
 const HomePage = () => {
   return (
     <main className='bg-[#0F0D11]'>
