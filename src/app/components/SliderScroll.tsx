@@ -2,15 +2,15 @@ import { gsap } from 'gsap/all';
 import React, { useLayoutEffect, useRef, useState } from 'react';
 
 export default function SliderScroll() {
-  const sliderRef = useRef(null);
-  const imageRefs = useRef([]);
+  const sliderRef = useRef<HTMLDivElement | null>(null);
+  const imageRefs = useRef<Array<HTMLDivElement | null>>([]);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useLayoutEffect(() => {
     const slider = sliderRef.current;
     const images = imageRefs.current;
 
-    if (slider && images.length > 0) {
+    if (slider && images && images.length > 0) {
       gsap.to(images, {
         x: -2500,
         ease: 'power2',
