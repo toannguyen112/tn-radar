@@ -5,7 +5,7 @@ import TextReveal from './TextReveal';
 
 export default function SectionPower() {
   return (
-    <div className='relative h-[200vh]'>
+    <div className='relative h-[300vh]'>
       <div className='sticky top-0 h-[100vh] overflow-hidden'>
         <div className='absolute left-0 top-0 z-20 px-[16px] lg:px-[62px] xl:px-[88px]'>
           <div className='h5'>
