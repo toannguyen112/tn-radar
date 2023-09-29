@@ -1,8 +1,8 @@
 export default function TelegramFooter() {
   return (
     <svg
-      width='28'
-      height='23'
+      width='100%'
+      height='100%'
       viewBox='0 0 28 23'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

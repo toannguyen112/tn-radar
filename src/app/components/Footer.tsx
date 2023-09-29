@@ -61,13 +61,19 @@ export default function Footer() {
                 <div className='h6 font-bold text-[#00CC2D]'>Contact</div>
                 <div className='flex items-center space-x-[19px]'>
                   <div className='flex h-12 w-12 items-center justify-center rounded border-2 border-white duration-300 ease-in-out lg:hover:border-[#00CC2D] lg:hover:bg-[#00CC2D]'>
-                    <IconDiscord />
+                    <div className='h-8 w-8'>
+                      <IconDiscord />
+                    </div>
                   </div>
                   <div className='flex h-12 w-12 items-center justify-center rounded border-2 border-white duration-300 ease-in-out lg:hover:border-[#00CC2D] lg:hover:bg-[#00CC2D]'>
-                    <IconTelegram />
+                    <div className='h-8 w-8'>
+                      <IconTelegram />
+                    </div>
                   </div>
                   <div className='flex h-12 w-12 items-center justify-center rounded border-2 border-white duration-300 ease-in-out lg:hover:border-[#00CC2D] lg:hover:bg-[#00CC2D]'>
-                    <IconTwitter />
+                    <div className='h-8 w-8'>
+                      <IconTwitter />
+                    </div>
                   </div>
                 </div>
               </div>

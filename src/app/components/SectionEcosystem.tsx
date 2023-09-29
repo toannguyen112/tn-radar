@@ -8,11 +8,9 @@ import IconLayer2 from '../components/Icon/Layer2';
 import IconOptimism from '../components/Icon/Optimism';
 import IconOracle from '../components/Icon/Oracle';
 import IconPi from '../components/Icon/Pi';
-import IconPolygon from '../components/Icon/Polygon';
 import IconTelegram from '../components/Icon/Telegram';
 import IconTwitter from '../components/Icon/Twitter';
 import IconWeb3Macro from '../components/Icon/Web3Macro';
-import IconZksync from '../components/Icon/Zksync';
 
 export default function SectionEcosystem() {
   return (
@@ -97,7 +95,11 @@ export default function SectionEcosystem() {
             <div className='grid grid-cols-3 items-center justify-center space-x-[20px] md:space-x-[32px]	lg:flex	2xl:space-x-[80px]'>
               <div className='items-center space-x-[10px] border-r border-[#00CC2D] pr-[83px] md:pr-[80px] xl:flex	xl:space-x-[20px]	2xl:pr-[165px]'>
                 <div className='w-[140px] lg:w-[180px] 2xl:w-[254px]'>
-                  <IconZksync />
+                  <img
+                    src='/images/eco-1.png'
+                    alt='wrapper hero'
+                    className='h-full w-full object-cover'
+                  />
                 </div>
                 <div className='flex space-x-[10px] xl:block xl:space-x-0 xl:space-y-[10px] 2xl:space-y-[15px]'>
                   <IconDiscord />
@@ -131,7 +133,11 @@ export default function SectionEcosystem() {
             <div className='flex items-center justify-center space-x-[20px]	md:space-x-[32px]	2xl:space-x-[80px]'>
               <div className='items-center space-x-[10px] border-r border-[#00CC2D] pr-[83px] md:pr-[80px] xl:flex	xl:space-x-[20px]	2xl:pr-[165px]'>
                 <div className='w-[250px] 2xl:w-[335px]'>
-                  <IconPolygon />
+                  <img
+                    src='/images/eco-2.png'
+                    alt='wrapper hero'
+                    className='h-full w-full object-cover'
+                  />
                 </div>
                 <div className='flex space-x-[10px] xl:block xl:space-x-0 xl:space-y-[10px] 2xl:space-y-[15px]'>
                   <IconDiscord />
@@ -230,7 +236,11 @@ export default function SectionEcosystem() {
           </div>
           <div className='flex w-full items-center justify-between space-x-10'>
             <div className='w-full'>
-              <IconZksync />
+              <img
+                src='/images/eco-1.png'
+                alt='wrapper hero'
+                className='h-full w-full object-cover'
+              />
             </div>
             <div className='space-y-2'>
               <IconDiscord />
@@ -260,7 +270,11 @@ export default function SectionEcosystem() {
           </div>
           <div className='flex w-full items-center justify-between space-x-10'>
             <div className='w-full'>
-              <IconPolygon />
+              <img
+                src='/images/eco-2.png'
+                alt='wrapper hero'
+                className='h-full w-full object-cover'
+              />
             </div>
             <div className='space-y-2'>
               <IconDiscord />
