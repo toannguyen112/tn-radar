@@ -14,9 +14,21 @@ declare module 'swiper/react' {
   }
 }
 
+interface Post {
+  attributes: {
+    thumbnail: {
+      data: {
+        attributes: {
+          url: string;
+        };
+      };
+    };
+  };
+}
+
 // import required modules
 function SliderNews() {
-  const [news, setLastNews] = useState([]);
+  const [news, setLastNews] = useState<Post[]>([]);
   const token = process.env.NEXT_PUBLIC_TOKEN;
   useEffect(() => {
     async function fetchData() {
@@ -70,7 +82,7 @@ function SliderNews() {
               <SwiperSlide key={index}>
                 <div className='h-[350px] overflow-hidden rounded-xl border border-[#323232] bg-[#18181A] lg:h-[450px] xl:h-[600px] 2xl:h-[814px]'>
                   <img
-                    src={`https://strapi-be-hg6l.onrender.com${post.attributes?.thumbnail.data.attributes.url}`}
+                    src={`https://strapi-be-hg6l.onrender.com${post?.attributes?.thumbnail?.data?.attributes?.url}`}
                     alt='image'
                     className='slider-image-content'
                   />

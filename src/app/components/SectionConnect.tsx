@@ -4,8 +4,21 @@ import Marquee from 'react-fast-marquee';
 import TextReveal from './TextReveal';
 import TextRevealCol from './TextRevealCol';
 
+// Define a TypeScript type for the 'connect' object
+interface Connect {
+  attributes: {
+    thumbnail: {
+      data: {
+        attributes: {
+          url: string;
+        };
+      };
+    };
+  };
+}
+
 export default function SectionConnect() {
-  const [connects, setConnects] = useState([]);
+  const [connects, setConnects] = useState<Connect[]>([]); // Specify the type as an array of 'Connect' objects
   const token = process.env.NEXT_PUBLIC_TOKEN;
   useEffect(() => {
     async function fetchData() {
@@ -50,7 +63,7 @@ export default function SectionConnect() {
                   className='mx-[15px] h-[814px] w-[688px] overflow-hidden rounded-xl border border-[#323232] bg-[#18181A]'
                 >
                   <img
-                    src={`https://strapi-be-hg6l.onrender.com${connect.attributes?.thumbnail.data.attributes.url}`}
+                    src={`https://strapi-be-hg6l.onrender.com${connect?.attributes?.thumbnail?.data?.attributes?.url}`}
                     alt='image'
                     className='slider-image-content'
                   />

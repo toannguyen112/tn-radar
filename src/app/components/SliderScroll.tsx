@@ -1,6 +1,18 @@
 import { gsap } from 'gsap/all';
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
+interface Power {
+  attributes: {
+    thumbnail: {
+      data: {
+        attributes: {
+          url: string;
+        };
+      };
+    };
+  };
+}
+
 export default function SliderScroll() {
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const imageRefs = useRef<Array<HTMLDivElement | null>>([]);
@@ -32,7 +44,7 @@ export default function SliderScroll() {
     }
   }, []);
 
-  const [powers, setPowers] = useState([]);
+  const [powers, setPowers] = useState<Power[]>([]);
   const token = process.env.NEXT_PUBLIC_TOKEN;
   useEffect(() => {
     async function fetchData() {
@@ -69,7 +81,7 @@ export default function SliderScroll() {
                 ref={(el) => (imageRefs.current[index] = el)}
               >
                 <img
-                  src={`https://strapi-be-hg6l.onrender.com${power.attributes?.thumbnail.data.attributes.url}`}
+                  src={`https://strapi-be-hg6l.onrender.com${power?.attributes?.thumbnail?.data?.attributes?.url}`}
                   alt='image'
                   className='slider-image-content'
                 />
