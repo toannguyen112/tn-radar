@@ -19,29 +19,31 @@ export default function SliderScroll() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   useLayoutEffect(() => {
-    const slider = sliderRef.current;
-    const images = imageRefs.current;
+    setTimeout(() => {
+      const slider = sliderRef.current;
+      const images = imageRefs.current;
 
-    if (slider && images && images.length > 0) {
-      gsap.to(images, {
-        x: -2500,
-        ease: 'power2',
-        scrollTrigger: {
-          trigger: slider,
-          start: 'top top',
-          end: 'bottom center',
-          scrub: 2,
-          pin: slider,
-          pinSpacing: false,
-          onUpdate: (self) => {
-            const currentImageIndex = Math.round(
-              self.progress * (images.length - 1)
-            );
-            setActiveImageIndex(currentImageIndex);
+      if (slider && images && images.length > 0) {
+        gsap.to(images, {
+          x: -2500,
+          ease: 'power2',
+          scrollTrigger: {
+            trigger: slider,
+            start: 'top top',
+            end: 'bottom center',
+            scrub: 2,
+            pin: slider,
+            pinSpacing: false,
+            onUpdate: (self) => {
+              const currentImageIndex = Math.round(
+                self.progress * (images.length - 1)
+              );
+              setActiveImageIndex(currentImageIndex);
+            },
           },
-        },
-      });
-    }
+        });
+      }
+    }, 1000);
   }, []);
 
   const [powers, setPowers] = useState<Power[]>([]);
