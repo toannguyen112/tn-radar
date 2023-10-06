@@ -92,7 +92,7 @@ export default function SliderScroll() {
           : null}
         <div className='slider-image'></div>
       </div>
-      <div className='h1 absolute right-[65px] top-0 rotate-[-8deg] font-extrabold text-white'>
+      <div className='h1 absolute top-0 rotate-[-8deg] font-extrabold text-white md:right-[65px]'>
         {activeImageIndex === 0 && (
           <div className='text-to-display text-white'>
             <p>POWERED by</p>

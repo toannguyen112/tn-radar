@@ -194,6 +194,20 @@ export default function SectionEcosystem() {
               <div className='items-center space-x-[10px] border-r border-[#00CC2D] pr-[83px] md:pr-[80px] xl:flex	xl:space-x-[20px]	2xl:pr-[165px]'>
                 <div className='w-full max-w-[298px]'>
                   <img
+                    src='/images/eco-13.png'
+                    alt='wrapper hero'
+                    className='h-full w-full object-cover'
+                  />
+                </div>
+                <div className='flex space-x-[10px] xl:block xl:space-x-0 xl:space-y-[10px] 2xl:space-y-[15px]'>
+                  <IconDiscord />
+                  <IconTelegram />
+                  <IconTwitter />
+                </div>
+              </div>
+              <div className='items-center space-x-[10px] border-r border-[#00CC2D] pr-[83px] md:pr-[80px] xl:flex	xl:space-x-[20px]	2xl:pr-[165px]'>
+                <div className='w-full max-w-[270px]'>
+                  <img
                     src='/images/eco-11.png'
                     alt='wrapper hero'
                     className='h-full w-full object-cover'
@@ -207,7 +221,7 @@ export default function SectionEcosystem() {
               </div>
 
               <div className='items-center space-x-[10px] xl:flex xl:space-x-[20px]'>
-                <div className='w-full max-w-[366px]'>
+                <div className='w-full max-w-[330px]'>
                   <img
                     src='/images/eco-12.png'
                     alt='wrapper hero'
@@ -382,6 +396,20 @@ export default function SectionEcosystem() {
             <div className='w-[70%]'>
               <img
                 src='/images/eco-12.png'
+                alt='wrapper hero'
+                className='h-full w-full object-cover'
+              />
+            </div>
+            <div className='space-y-2'>
+              <IconDiscord />
+              <IconTelegram />
+              <IconTwitter />
+            </div>
+          </div>
+          <div className='flex w-full items-center justify-between '>
+            <div className='w-[70%]'>
+              <img
+                src='/images/eco-13.png'
                 alt='wrapper hero'
                 className='h-full w-full object-cover'
               />
