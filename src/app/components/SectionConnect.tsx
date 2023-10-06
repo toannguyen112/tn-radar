@@ -51,7 +51,7 @@ export default function SectionConnect() {
         </div>
       </div>
       <div className='relative'>
-        <div className='h1 absolute right-[18px] top-0 md:right-[88px]'>
+        <div className='h1 absolute right-0 top-0 md:right-[88px]'>
           <TextRevealCol text='点と点を結びつける' />
         </div>
         <div className='pr-[200px]'>
