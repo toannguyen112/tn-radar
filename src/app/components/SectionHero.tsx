@@ -15,13 +15,26 @@ export default function SectionHero() {
       </div>
       <div className='relative overflow-hidden '>
         <div className='relative z-10 flex w-full items-center justify-between space-x-[10px] md:space-x-[98px]'>
-          <div className='absolute left-[13%] top-[200px] z-10'>
+          <div className='absolute left-[15%] top-[237px] z-10 hidden lg:block xl:left-[13%] xl:top-[200px]'>
             <TypeAnimation
               sequence={['レーダーネットワーク', 1000]}
               wrapper='span'
               speed={20}
               style={{
-                fontSize: '2em',
+                fontSize: '1.5em',
+                display: 'inline-block',
+                color: '#00CC2D',
+              }}
+              repeat={Infinity}
+            />
+          </div>
+          <div className='absolute left-[5%] top-[270px] z-10 md:top-[255px] lg:hidden'>
+            <TypeAnimation
+              sequence={['レーダーネットワーク', 1000]}
+              wrapper='span'
+              speed={20}
+              style={{
+                fontSize: '1em',
                 display: 'inline-block',
                 color: '#00CC2D',
               }}

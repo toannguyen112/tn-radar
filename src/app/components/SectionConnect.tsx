@@ -43,7 +43,7 @@ export default function SectionConnect() {
     fetchData();
   }, []);
   return (
-    <section className='h-screen max-h-full pt-[186px]'>
+    <section className='h-[810px] max-h-full pt-[186px]'>
       <div className='mb-12 px-[16px] lg:px-[62px] xl:px-[88px]'>
         <div className='h1  font-extrabold'>
           <TextReveal text='Connecting' />
@@ -51,7 +51,7 @@ export default function SectionConnect() {
         </div>
       </div>
       <div className='relative'>
-        <div className='h1 absolute right-[40px] top-0 md:right-[88px]'>
+        <div className='h1 absolute right-[40px] top-0 md:right-[88px] lg:text-[1.5rem]'>
           <TextRevealCol text='点と点を結びつける' />
         </div>
         <div className='pr-[200px]'>

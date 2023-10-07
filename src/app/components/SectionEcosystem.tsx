@@ -4,7 +4,21 @@ import IconTwitter from '../components/Icon/Twitter';
 
 export default function SectionEcosystem() {
   return (
-    <section className='pb-[53px]	md:pb-[74px] xl:pt-[258px] 2xl:pb-[106px]'>
+    <section className='relative	pb-[53px] md:pb-[74px] xl:pt-[258px] 2xl:pb-[106px]'>
+      <div className='absolute left-0 top-1/2 hidden w-[400px] translate-y-[-30%] md:block xl:w-[600px]'>
+        <img
+          src='/images/green-blur-left.png'
+          alt='wrapper hero'
+          className='h-full w-full object-cover'
+        />
+      </div>
+      <div className='absolute right-0 top-1/2 hidden w-[400px] translate-y-[-30%] md:block xl:w-[600px]'>
+        <img
+          src='/images/green-blur-right.png'
+          alt='wrapper hero'
+          className='h-full w-full object-cover'
+        />
+      </div>
       <div className='relative overflow-hidden px-[16px] lg:px-[62px] xl:px-[88px]'>
         <div className='h1 text-center font-extrabold uppercase text-white'>
           Our Ecosystem
