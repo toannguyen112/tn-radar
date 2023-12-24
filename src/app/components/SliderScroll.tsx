@@ -52,7 +52,7 @@ export default function SliderScroll() {
     async function fetchData() {
       try {
         const response = await fetch(
-          'https://strapi-be-hg6l.onrender.com/api/posts-radars?filters[isPower][$eq]=true&populate=*',
+          'https://3.106.127.44.nip.io/api/posts-radars?filters[isPower][$eq]=true&populate=*',
           {
             method: 'GET',
             headers: {
@@ -83,7 +83,7 @@ export default function SliderScroll() {
                 ref={(el) => (imageRefs.current[index] = el)}
               >
                 <img
-                  src={`https://strapi-be-hg6l.onrender.com${power?.attributes?.thumbnail?.data?.attributes?.url}`}
+                  src={`https://3.106.127.44.nip.io${power?.attributes?.thumbnail?.data?.attributes?.url}`}
                   alt='image'
                   className='slider-image-content'
                 />

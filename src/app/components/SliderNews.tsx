@@ -34,7 +34,7 @@ function SliderNews() {
     async function fetchData() {
       try {
         const response = await fetch(
-          'https://strapi-be-hg6l.onrender.com/api/posts-radars?filters[isLastNew][$eq]=true&populate=*',
+          'https://3.106.127.44.nip.io/api/posts-radars?filters[isLastNew][$eq]=true&populate=*',
           {
             method: 'GET',
             headers: {
@@ -82,7 +82,7 @@ function SliderNews() {
               <SwiperSlide key={index}>
                 <div className='h-[350px] overflow-hidden rounded-xl border border-[#323232] bg-[#18181A] lg:h-[450px] xl:h-[600px] 2xl:h-[814px]'>
                   <img
-                    src={`https://strapi-be-hg6l.onrender.com${post?.attributes?.thumbnail?.data?.attributes?.url}`}
+                    src={`https://3.106.127.44.nip.io${post?.attributes?.thumbnail?.data?.attributes?.url}`}
                     alt='image'
                     className='slider-image-content'
                   />

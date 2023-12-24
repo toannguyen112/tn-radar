@@ -24,7 +24,7 @@ export default function SectionConnect() {
     async function fetchData() {
       try {
         const response = await fetch(
-          'https://strapi-be-hg6l.onrender.com/api/posts-radars?filters[isConnectingDot][$eq]=true&populate=*',
+          'https://3.106.127.44.nip.io/api/posts-radars?filters[isConnectingDot][$eq]=true&populate=*',
           {
             method: 'GET',
             headers: {
@@ -63,7 +63,7 @@ export default function SectionConnect() {
                   className='mx-[15px] h-[814px] w-[688px] overflow-hidden rounded-xl border border-[#323232] bg-[#18181A]'
                 >
                   <img
-                    src={`https://strapi-be-hg6l.onrender.com${connect?.attributes?.thumbnail?.data?.attributes?.url}`}
+                    src={`https://3.106.127.44.nip.io${connect?.attributes?.thumbnail?.data?.attributes?.url}`}
                     alt='image'
                     className='slider-image-content'
                   />
